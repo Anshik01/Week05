@@ -1,4 +1,4 @@
-package com.filterrecord;
+package com.modifycsvfile;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
@@ -6,7 +6,7 @@ import com.opencsv.exceptions.CsvValidationException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class FilterStudent {
+public class UpdateSalary {
     public static void main(String[] args) {
         try(CSVReader csvReader = new CSVReader(new FileReader("file.txt"))){
 
@@ -14,9 +14,15 @@ public class FilterStudent {
 
             // reading file until null value
             while((line = csvReader.readNext()) != null){
-                // filter marks
-                if(Integer.parseInt(line[3]) > 80){       // line[3] has marks stored in it
-                    System.out.println("ID : " + line[0] + " Name : " + line[1] + " Department : " + line[2] + " marks : " + line[3]);
+                // filter employee by department
+                if(line[2].equals("IT")){       // line[2] has department stored in it
+                    int salary = Integer.parseInt(line[3]);
+                    // increasing salary by 10%
+                    salary += (salary/10);
+                    // updating salary
+                    line[3] = String.valueOf(salary);
+
+                    System.out.println("ID : " + line[0] + " Name : " + line[1] + " Department : " + line[2] + " Salary : " + line[3]);
                 }
             }
         }
