@@ -15,7 +15,7 @@ public class FilterStudent {
             // reading file until null value
             while((line = csvReader.readNext()) != null){
                 // filter marks
-                if(Integer.parseInt(line[3]) > 80){
+                if(Integer.parseInt(line[3]) > 80){       // line[3] has marks stored in it
                     System.out.println("ID : " + line[0] + " Name : " + line[1] + " Department : " + line[2] + " Salary : " + line[3]);
                 }
             }
