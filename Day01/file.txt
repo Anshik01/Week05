@@ -1,0 +1,5 @@
+"101","Anshik","IT","50000","anshik0706@gmail.com", "8451279601"
+"102","Aayush","IT","70000","ayushgmail.com", "84571279601"
+"103","Ansh","Support","80005","anshik0706@gmail.com", "8451279601"
+"104","Durgesh","Management","96000", "anshik0706@gmail.com", "8451279601"
+"105","Varsha","HR","78000","anshik0706@gmail.com", "84512796001"
