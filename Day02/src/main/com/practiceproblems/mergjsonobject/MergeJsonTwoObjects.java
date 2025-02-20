@@ -1,4 +1,4 @@
-package com.mergjsonobject;
+package com.practiceproblems.mergjsonobject;
 
 import org.json.JSONObject;
 

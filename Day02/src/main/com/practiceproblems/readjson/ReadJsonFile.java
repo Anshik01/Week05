@@ -1,4 +1,4 @@
-package com.readjson;
+package com.practiceproblems.readjson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

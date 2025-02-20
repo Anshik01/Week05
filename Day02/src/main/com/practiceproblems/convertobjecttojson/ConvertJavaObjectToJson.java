@@ -1,4 +1,4 @@
-package com.convertobjecttojson;
+package com.practiceproblems.convertobjecttojson;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
